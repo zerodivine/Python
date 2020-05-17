@@ -26,11 +26,22 @@ else:
    stage == 10
    plu = 10000
 
+#Percent to being complete
+percentage = "{:.0%}".format(amount / plu)
 
+#Individual Pluton Price
+price = ("pri")
+pri = int(input("Current cost of plutons? "))
+
+#Cost to finish
+x = "{:,}".format((plu - amount) * plu )
 
 #Result
 print ("Plutons remaining: ", end = '')
 print(plu - amount)
 print("Percentage to completion: ", end = '')
-print(amount / plu , end = '')
-print("%")
+print(percentage)
+print("Cost to finish: ", end = '')
+print(x)
+
+
