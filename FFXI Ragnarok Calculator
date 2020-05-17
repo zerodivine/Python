@@ -1,0 +1,36 @@
+#Remaining cost for fully upgrade Ragnarok
+#Starting at level i119(I) with intention to skip next step to i119(3).
+
+#Ragnarok Stages
+#Stage 1 Ragnarok (Level 75)
+#Stage 2 Ragnarok (Level 80)
+#Stage 3 Ragnarok (Level 85)
+#Stage 4 Ragnarok (Level 90)
+#Stage 5 Ragnarok (Level 95)
+#Stage 6 Ragnarok (Level 99)
+#Stage 7 Ragnarok (Level 99 II)
+#Stage 8 Ragnarok (Level 119 I)
+#Stage 9 Ragnarok (Level 119 II)
+#Stage 10 Ragnarok (Level 119 III)
+
+#current stage
+stage = input ("What stage? ")
+
+
+#amount of plutons needed
+amount = int(input ("How many plutons possessed? "))
+
+if stage == 9:
+   plu = 300
+else:
+   stage == 10
+   plu = 10000
+
+
+
+#Result
+print ("Plutons remaining: ", end = '')
+print(plu - amount)
+print("Percentage to completion: ", end = '')
+print(amount / plu , end = '')
+print("%")
